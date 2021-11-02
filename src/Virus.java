@@ -7,8 +7,8 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Virus {
 
     private int amount = ThreadLocalRandom.current().nextInt(1,6);
-    private int currentVirusHorizontal = ThreadLocalRandom.current().nextInt(-5, 5 + 1);
-    private int currentVirusVertical = ThreadLocalRandom.current().nextInt(-5, 5 + 1);
+    private int currentVirusHorizontal = ThreadLocalRandom.current().nextInt(-1, 1 + 1);
+    private int currentVirusVertical = ThreadLocalRandom.current().nextInt(-2, 3 + 1);
 
     public int getCurrentVirusHorizontal() {
         return currentVirusHorizontal;

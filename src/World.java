@@ -22,6 +22,8 @@ public class World {
 
 
     public void virusdetected(){
+        System.out.println(virus.getCurrentVirusVertical());
+        System.out.println(virus.getCurrentVirusHorizontal());
         if(place.verticallocation == virus.getCurrentVirusVertical() && place.horizontallocation == virus.getCurrentVirusHorizontal()) {
             dialog.VirusDetected();
             int choice = Integer.parseInt(scanner.next());
