@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Virus {
 
-    Scanner option = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
     int amout = ThreadLocalRandom.current().nextInt(1,6);
 
@@ -24,27 +24,54 @@ public class Virus {
         System.out.println(" 1 : kill virus O.o ");
         System.out.println(" 2 : be reasonable :) ");
         System.out.println(" 3 : leave the virus :( ");
-        System.out.println("4 : have sex with the virus :D ");
+        System.out.println("4 : have  virus :D ");
         System.out.println("______________________________");
         System.out.println();
 
     }
     public void choice(){
-        int choose = option.nextInt();
-        if(choose == 1 ){
+       while(amout != 0  ) {
+           int choose = scanner.nextInt();
+           if (choose == 1) {
+               killVirus();
+               System.out.println(amout);
+           }
 
-        }
-        if(choose == 2 ){
+           if (choose == 2) {
+               reasonable();
+           }
 
-        }
-        if(choose == 3 ){
+           if (choose == 3) {
+               System.out.println(" not my probelem ");
 
-        }
-        if(choose == 4 ){
+           }
 
-        }
-        if(choose == 5 ){
+           if (choose == 4) {
+               amout = amout * 2;
+               System.out.println(amout);
+           }
 
+       }
+
+    }
+    public void killVirus(){
+        amout--;
+        System.out.println(amout + " virus left");
+
+    }
+    public void reasonable(){
+        System.out.println("1 : whats your purpose here ");
+        System.out.println("<< virus >> : am not Virus i travel to the stomach to help digest the food ");
+        System.out.println(" do you want to kill the virus : Y/N");
+
+        String  input = scanner.next();
+
+        if(input.toLowerCase().equals("y")){
+           amout--;
+
+        }else if(input.toLowerCase().equals("n")){
+
+            System.out.println(" ok you shall procced :D");
         }
 
     }

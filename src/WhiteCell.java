@@ -36,14 +36,12 @@ public class WhiteCell {
         if(moving.equals("right")){
 
             System.out.println("you move right to the location :");
-           // place.verticallocation++ ;
             place.horizontallocation--;
             System.out.println(place.verticallocation);
         }
         if(moving.equals("left")){
 
             System.out.println("you move left to the location :");
-           // place.verticallocation++ ;
             place.horizontallocation++;
             System.out.println(place.verticallocation);
         }
@@ -58,7 +56,7 @@ public class WhiteCell {
         System.out.println("___________________________________________________________");
 
         System.out.println("select direction : ..  ");
-        System.out.println("forward , backward , right , left");
+        System.out.println("up , down , right , left");
 
     }
 }
