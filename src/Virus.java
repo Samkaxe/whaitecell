@@ -7,16 +7,16 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Virus {
 
     private int amount = ThreadLocalRandom.current().nextInt(1,6);
-    private int currentVirusHorizontal = ThreadLocalRandom.current().nextInt(-1, 1 + 1);
+    // private int currentVirusHorizontal = ThreadLocalRandom.current().nextInt(1, 2);
     private int currentVirusVertical = ThreadLocalRandom.current().nextInt(-2, 3 + 1);
 
-    public int getCurrentVirusHorizontal() {
+   /* public int getCurrentVirusHorizontal() {
         return currentVirusHorizontal;
-    }
+    } */
 
-    public void setCurrentVirusHorizontal(int currentVirusHorizontal) {
+   /*  public void setCurrentVirusHorizontal(int currentVirusHorizontal) {
         this.currentVirusHorizontal = currentVirusHorizontal;
-    }
+    } */
 
     public int getCurrentVirusVertical() {
         return currentVirusVertical;
@@ -32,8 +32,8 @@ public class Virus {
 
     public void killVirus(){
         amount--;
-        currentVirusHorizontal = ThreadLocalRandom.current().nextInt(-5, 5 + 1);
-        currentVirusVertical = ThreadLocalRandom.current().nextInt(-5, 5 + 1);
+       // currentVirusHorizontal = ThreadLocalRandom.current().nextInt(-5, 5 + 1);
+        currentVirusVertical = ThreadLocalRandom.current().nextInt(-2, 3 + 1);
     }
 
     public int getAmount() {

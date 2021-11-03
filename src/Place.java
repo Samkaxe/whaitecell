@@ -40,7 +40,7 @@ public class Place {
         if (verticallocation == -2 && horizontallocation == -1) {
             System.out.println(shortcut + " rightleg");
         }
-        else if (verticallocation == -2 && horizontallocation == +1) {
+        else if (verticallocation == -2 && horizontallocation == 1) {
             System.out.println(shortcut + " leftleg");
         } else if (verticallocation == 2 && horizontallocation == 1) {
         System.out.println(shortcut + " : left arm");
